@@ -8,10 +8,12 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-
 class Micropost < ActiveRecord::Base
-  attr_accessible :content, :user_id
-  validates :content, :length => { :maximum => 140 }
-  
+  attr_accessible :content
+  validates :content, presence: true, length: { maximum: 140 }
+  validates :user_id, presence: true
+
   belongs_to :user
+
+  default_scope order: 'microposts.created_at DESC'
 end
