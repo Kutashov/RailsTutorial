@@ -1,5 +1,7 @@
 RailsTutorial::Application.routes.draw do
 
+  get "password_resets/new"
+
   root to: 'static_pages#home'
 
   match '/help',    to: 'static_pages#help'
@@ -17,6 +19,7 @@ RailsTutorial::Application.routes.draw do
     end
   end
   resources :sessions, only: [:new, :create, :destroy]
+  resources :password_resets
 
 # The priority is based upon order of creation:
 # first created -> highest priority.
