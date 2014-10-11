@@ -69,6 +69,7 @@ describe "User pages" do
       before do
         fill_in "Name",         with: "Example User"
         fill_in "Email",        with: "user@example.com"
+        fill_in "Nickname",     with: "usernickname"
         fill_in "Password",     with: "foobar"
         fill_in "Confirmation", with: "foobar"
       end
@@ -111,6 +112,7 @@ describe "User pages" do
       let(:new_email) { "new@example.com" }
       before do
         fill_in "Name",             with: new_name
+        fill_in "Nickname",         with: user.nickname
         fill_in "Email",            with: new_email
         fill_in "Password",         with: user.password
         fill_in "Confirm Password", with: user.password
