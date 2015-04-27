@@ -12,12 +12,12 @@ gem 'bootstrap-will_paginate', '0.0.6'
 
 group :development do
   gem 'rspec-rails', '2.11.0'
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3', '1.3.10'
   gem 'annotate', '2.5.0'
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'pg', '0.18.1'
 end
 
 # Gems used only for assets and not required
