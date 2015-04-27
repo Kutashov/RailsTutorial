@@ -19,6 +19,7 @@ class User < ActiveRecord::Base
   has_many :followers, through: :reverse_relationships, source: :follower
   has_secure_password
 
+
   before_save { |user| user.email = email.downcase }
   before_save { create_remember_token (:remember_token) }
 

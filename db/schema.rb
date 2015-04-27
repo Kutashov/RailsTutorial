@@ -39,7 +39,6 @@ ActiveRecord::Schema.define(:version => 20141011103010) do
     t.string   "password_digest"
     t.string   "remember_token"
     t.boolean  "admin",                  :default => false
-    t.string   "auth_token"
     t.string   "password_reset_token"
     t.datetime "password_reset_sent_at"
     t.string   "nickname"
