@@ -19,7 +19,9 @@
         <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <p><%= link_to "forgotten password?", Rails.env.development? ? new_password_reset_path : public/500 %></p>
+    <% if Rails.env.development? %>
+        <p><%= link_to "forgotten password?", new_password_reset_path %></p>
+    <% end %>
 
     <p>
       New user? <%= link_to "Sign up now!", signup_path %>

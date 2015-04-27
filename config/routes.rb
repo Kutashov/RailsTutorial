@@ -1,7 +1,5 @@
 RailsTutorial::Application.routes.draw do
 
-  get "password_resets/new"
-
   root to: 'static_pages#home'
 
   match '/help',    to: 'static_pages#help'
