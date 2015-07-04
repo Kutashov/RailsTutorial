@@ -35,7 +35,7 @@ RailsTutorial::Application.configure do
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
-
+  config.action_mailer.default_url_options = {:host => "kutashov-railstutorial.herokuapp.com"}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       :port           => 587,
