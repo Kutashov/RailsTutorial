@@ -36,6 +36,16 @@ RailsTutorial::Application.configure do
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
 
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      :port           => 587,
+      :address        => "smtp.mailgun.org",
+      :domain         => ENV['smtp_domain'],
+      :user_name      => ENV['smtp_user'],
+      :password       => ENV['smtp_pass'],
+      :authentication => :plain,
+  }
+
   # Use a different logger for distributed setups
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 

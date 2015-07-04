@@ -1,27 +1,4 @@
-.DS_Store
+.idea
 
-*.apk
-*.ap_
-
-*.dex
-
-*.class
-
-bin/
-gen/
-
-local.properties
-
-.classpath
-.project
-.settings/
-project.properties
-
-proguard/
-
-*.iml
-*.ipr
-*.iws
-.idea/
-.gradle
-*.iml
+# Ignore application configuration
+/config/application.yml

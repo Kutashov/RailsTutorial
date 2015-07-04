@@ -1,0 +1,3 @@
+smtp_domain: 'sandbox9d65cecff7b6438499b8135f866663f8.mailgun.org'
+smtp_user: 'postmaster@sandbox9d65cecff7b6438499b8135f866663f8.mailgun.org'
+smtp_pass: 'dd7f9b4361bb607bd6e96e9509033012'

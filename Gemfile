@@ -38,6 +38,7 @@ group :test do
 end
 
 gem 'jquery-rails', '2.0.2'
+gem 'figaro', '1.1.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
