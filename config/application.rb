@@ -58,5 +58,8 @@ module RailsTutorial
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    config.lograge.enabled = true
+    config.lograge.ignore_actions = ['status#ping']
   end
 end
