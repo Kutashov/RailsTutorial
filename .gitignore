@@ -1,6 +1,7 @@
 .idea
+/log
 
-# Ignore application configuration
+# Ignore application configuration #
 /config/application.yml
 
 /log
